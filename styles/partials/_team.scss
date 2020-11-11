@@ -1,0 +1,52 @@
+.team {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 130%;
+  }
+
+  .member {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    .sc,
+    .tc {
+      width: 65%;
+    }
+
+    &.al {
+      flex-direction: row-reverse;
+    }
+
+    .photo {
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .team {
+    .member {
+      display: block;
+
+      .sc,
+      .tc {
+        width: 100%;
+      }
+
+      .photo {
+        width: 40%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
